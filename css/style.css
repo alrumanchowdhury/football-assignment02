@@ -1,0 +1,310 @@
+/*---------------------
+ Google font link in below
+-------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Common Css stylesheet start form here */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title{
+    margin: 20px 0;
+}
+.title h1{
+    font-size: 2em;
+    color: #111;
+    text-transform: capitalize;
+    line-height: 2;
+}
+
+.underline{
+    width: 300px;
+    height: 1px;
+    background-color: #2D25A0;
+}
+.btn{
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #E02C6D;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform .4s linear;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.all-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    margin: 40px 0;
+}
+/* common css stylesheet end here */
+
+/* header section stylesheet start */
+#header{
+    background-color: #2D25A0;
+}
+
+/* nav part css below */
+menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar{
+    display: none;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: all .4s linear;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    color: #2D25A0;
+    border-radius: 4px;
+}
+.login-btn i{
+    margin-right: 10px;
+}
+
+/* bennar part css below */
+
+.bennar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.dailoge-box{
+    color: #fff;
+}
+.dailoge-box i{
+    margin-left: 10px;
+}
+
+.bennar-img img{
+    width: 80%;
+}
+
+/* header section stylesheet end */
+
+/* top players section stylesheet start  */
+
+.all-players,.all-country{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.player-profile{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
+    padding: 15px;
+    border-radius: 5px;
+}
+.player-img img ,.country-img img{
+    width: 100%;
+}
+.player-info h2{
+    font-size: 28px;
+    line-height: 2.5;
+    text-transform: capitalize;
+}
+.player-info p{
+    color: #777;
+}
+
+
+/* top players section stylesheet end */
+
+/* top country section stylesheet start  */
+.country{
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.country-img img{
+    height: 200px;
+    border-radius: 5px;
+}
+.country-info{
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    width: 100%;
+    background: #00000075;
+    border-radius: 0px 0px 5px 5px;
+    transition: .5s linear;
+}
+.country-info h2{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+.country-info p{
+    color: #fff;
+    float: left;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 0px 30px 10px 30px;
+}
+.country-info p span{
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.country:hover .country-info{
+    bottom: 0;
+}
+
+/* top country section stylesheet end */
+
+/* News section stylesheet start */
+
+#news{
+    margin: 80px 0;
+}
+
+.all-news{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.single-news{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0, 25%);
+}
+.news-img img{
+    width: 90%;
+    height: 100%;
+}
+.news-heding{
+    position: relative;
+}
+.news-heding h2{
+    text-transform: capitalize;
+    padding-right: 5px;
+}
+.news-heding p{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+
+/* News section stylesheet end */
+
+/* Copa21 section stylesheet start  */
+
+.copa-highlights{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copa-details h2{
+    text-transform: capitalize;
+    font-size: 2em;
+    line-height: 2;
+}
+.copa-details p{
+    color: #777;
+}
+.copa-details i{
+    margin-left: 10px;
+}
+.copa-img img{
+    width: 80%;
+}
+/* Copa21 section stylesheet end */
+
+/* footer section stylesheet start */
+
+footer{
+    text-align: center;
+    margin-top: 100px;
+}
+.footer-logo img{
+    width: 400px;
+}
+.social-icon a{
+    text-decoration: none;
+    color: #111;
+}
+.social-icon a i{
+    padding: 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.copyright-text p{
+    margin: 20px 0;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+/* footer section stylesheet end */
+
+/* More Responsive Css for tablet */
+
+@media (min-width: 993px) and (max-width: 1024px){
+    .player-info h2{font-size: 22px;}
+    .country-info{bottom: -60px;}
+    .country-info p{padding: 0px 15px 10px 15px;}
+    .news-heding h2{font-size: 1.1em;}
+}
+
+/* Responsive stylesheet for smaller device */
+
+@media (max-width: 425px) {
+
+    .news-heding h2{
+        font-size: 1.1em;
+        line-height: 1.3;
+    }
+    .footer-logo img{width: 300px;}
+}
+
+@media (max-width: 320px) {
+    .country-info p{padding: 0px 20px 10px 20px;}
+    .news-heding h2{
+        font-size: 1em;
+        line-height: 1;
+    }
+    .news-heding h2{
+        bottom: 5px;
+    }
+    .footer-logo img{width: 280px;}
+}

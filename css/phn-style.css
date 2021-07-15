@@ -1,0 +1,75 @@
+/*-----------------------------------
+ Responsive Phone size web page css file 
+-----------------------------------*/
+
+@media (max-width: 688px) {
+    
+    /* header section stylesheet start */
+
+    nav{
+        position: relative;
+    }
+    .bar{
+        display: block;
+    }
+    .bar i{
+        color: #fff;
+        font-size: 2em;
+    }
+    nav ul.nav-bar{
+        display: none;
+        position: absolute;
+        top: 110%;
+        left: 0;
+        background-color: #2d25a0;
+    }
+    nav ul li{
+        padding: 0 40px 0 0;
+        margin-bottom: 10px;
+    }
+    nav:hover .nav-bar{
+        display: block;
+    }
+    .bennar {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .bennar-img img{
+        width: 100%;
+    }
+    /* header section stylesheet end */
+
+    /* top players and top country section stylesheet start together  */
+
+
+    .all-players,.all-country{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    .country-info{
+        bottom: -100;
+    }
+
+    /* top players and top country section stylesheet end together  */
+
+
+    /* News section stylesheet start */
+    .all-news{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* News section stylesheet end */
+
+    /* Copa21 section stylesheet start  */
+
+    .copa-highlights{
+        display: flex;
+        flex-direction: column;
+    }
+    .copa-img img{
+        width: 100%;
+    }
+    /* Copa21 section stylesheet end */
+
+
+}

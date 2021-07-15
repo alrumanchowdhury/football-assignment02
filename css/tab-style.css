@@ -1,0 +1,55 @@
+/*-----------------------------------
+ Responsive tabet size web page css file 
+-----------------------------------*/
+
+@media (max-width: 992px) {
+
+    /* common css */
+    .container {
+        width: 90%;
+    }
+    /* common css */
+        
+    /* header section stylesheet start */
+
+    nav ul li {
+        margin-right: 10px;
+    }
+    .bennar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }.bennar-img img {
+        width: 90%;
+    }
+
+    /* header section stylesheet end */
+
+    /* top players and top country section stylesheet start together  */
+
+
+    .all-players,.all-country{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    /* top players and top country section stylesheet end together  */
+
+
+    /* News section stylesheet start */
+    .all-news{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* News section stylesheet end */
+
+    /* Copa21 section stylesheet start  */
+    .copa-highlights{
+        display: flex;
+        flex-direction: column;
+    }
+    .copa-img img{
+        width: 100%;
+    }
+    /* Copa21 section stylesheet end */
+
+}
